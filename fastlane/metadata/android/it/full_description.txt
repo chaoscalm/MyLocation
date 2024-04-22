@@ -1,0 +1,17 @@
+<big><b>Features:</b></big>
+
+<b>My Location</b> finds your device's location in the following ways:
+
+<b>-</b> <b>GPS</b> is usually the most accurate method. But a position fix may take some time or may not work at all due to signal loss. <b>Lock GPS</b> feature runs a persistent service to keep connected with the satellites.
+
+You can also see the list of visible satellites with their PRNs (unique identifiers) and SNR (signal quality).
+
+<b>-</b> <b>Network Location Provider</b> uses Wi-Fi or Cellular ids to estimate the location. On the devices with Google Play Services installed, NLP usually uses Google Location Service at backend.
+
+<b>-</b> <b>UnifiedNLP</b> is an open source API which has been used to develop multiple NLP backends (https://github.com/microg/UnifiedNlp/wiki/Backends).
+
+<b>Furthermore:</b>
+<b>-</b> Location coordinates can be copied to clipboard or opened in a maps app, if installed.
+<b>-</b> Clearing A-GPS aiding data is also supported.
+
+<b>Note</b> that My Location is not a location provider like UnifiedNLP (or microG GmsCore). It just shows the location information received from AOSP location providers (GPS and Network) or directly from UnifiedNLP Backends (whichever are available on the device).
