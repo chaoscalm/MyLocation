@@ -1,8 +1,7 @@
 /.gradle/
 /.idea/
-
+/app/release
+/app/debug
 /build/
-
 /local.properties
-
 /out/
