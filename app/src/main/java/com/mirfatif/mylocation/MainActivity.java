@@ -158,6 +158,8 @@ public class MainActivity extends AppCompatActivity {
     String locale = SETTINGS.getLocale();
     if (locale.equals(getString(R.string.lang_code_en))) {
       menu.findItem(R.id.action_locale_en).setChecked(true);
+    } else if (locale.equals(getString(R.string.lang_code_it))) {
+      menu.findItem(R.id.action_locale_it).setChecked(true);
     } else if (locale.equals(getString(R.string.lang_code_pt_rBr))) {
       menu.findItem(R.id.action_locale_pt_rBr).setChecked(true);
     } else if (locale.equals(getString(R.string.lang_code_el))) {
@@ -189,6 +191,8 @@ public class MainActivity extends AppCompatActivity {
           locale = "";
         } else if (itemId == R.id.action_locale_en) {
           locale = getString(R.string.lang_code_en);
+        } else if (itemId == R.id.action_locale_it) {
+          locale = getString(R.string.lang_code_it);
         } else if (itemId == R.id.action_locale_pt_rBr) {
           locale = getString(R.string.lang_code_pt_rBr);
         } else if (itemId == R.id.action_locale_el) {
